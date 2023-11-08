@@ -179,7 +179,8 @@
   }
   
   .item-contact:hover {
-    background-color: var(--user-color);
+    filter: drop-shadow(0.3125rem 0.3125rem 1.875rem --text-color);
+    transform: scale(1.1);
     cursor: pointer;
   }
   
