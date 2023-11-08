@@ -1,0 +1,207 @@
+:root {
+    --text-color: #101010;
+    --margin-color: #c295b4;
+    --main-color: #f2f8f4;
+    --user-color: #743131;
+    --aside-color: #917a91;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 auto;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--user-color);
+  }
+  
+  .wrapper {
+    min-height: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+    max-width: 1440px;
+    border-style: ridge;
+  }
+  
+  /* Header */
+  .nav-list,
+  .list-footer {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+  }
+  
+  .nav-link,
+  .user-work,
+  .user-name,
+  .title,
+  .list-footer,
+  .section-title {
+    font-family: "Oleo Script";
+    font-style: normal;
+    font-weight: 400;
+  }
+  
+  .nav-link {
+    padding: 0 20px;
+    line-height: 50px;
+    font-size: xx-large;
+  }
+  
+  .nav-link,
+  .link,
+  .list-footer {
+    text-decoration-line: none;
+    color: var(--text-color);
+  }
+  
+  .link{
+    color: var(--user-color);
+  }
+  .nav-link:hover {
+    color: var(--margin-color);
+    background-color: var(--main-color);
+  }
+  
+  /* Main */
+  .main-block {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .main-section {
+    background-color: var(--main-color);
+  }
+  
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+  
+  .left-section {
+    padding-left: 25px;
+  }
+  
+  .user-name {
+    font-size: 100px;
+  }
+  
+  .contact-list,
+  .user-name,
+  .user-work {
+    color: var(--main-color);
+  }
+  
+  .span-item {
+    color: var(--text-color);
+  }
+  
+  .user-work {
+    font-size: 70px;
+  }
+  
+  .user-text {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 0px;
+    background-color: var(--user-color);
+  }
+  
+  .user-photo {
+    border-radius: 50%;
+    margin: 25px 40px 0px 35px;
+  }
+  
+  .section-title {
+    font-size: 40px;
+    color: var(--user-color);
+  }
+  
+  .subtitle {
+    padding-right: 25px;
+  }
+  
+  .main-title {
+    display: flex;
+    justify-content: center;
+    margin-right: 25px;
+    background-color: var(--aside-color);
+    color: var(--user-color);
+  }
+  
+  .item {
+    line-height: 30px;
+  }
+  
+  .snippet {
+    color: var(--main-color);
+    background-color: var(--text-color);
+  }
+  
+  /* Aside */
+  .aside-content {
+    padding-left: 20px;
+    background-color: var(--aside-color);
+  }
+  
+  .contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+    padding: 0px;
+  }
+  
+  .item-contact {
+    margin-left: 20px;
+    line-height: 30px;
+    list-style: none;
+    transition: 0.3s;
+  }
+  
+  .item-contact:hover {
+    filter: drop-shadow(0.3125rem 0.3125rem 1.875rem --text-color);
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  .link:hover {
+    color: var(--main-color);
+    background-color: var(--user-color);
+    cursor: pointer;
+  }
+  
+  .footer,
+  .header {
+    background-color: var(--margin-color);
+    margin: -20px 0px;
+  }
+  
+  .item-footer {
+    padding-top: 15px;
+    color: var(--text-color);
+  }
+  
+  .rs-school-img:hover {
+    background-color: var(--user-color);
+  }
