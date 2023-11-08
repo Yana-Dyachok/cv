@@ -3,7 +3,7 @@
 # Yana Dyachok
 #### Front End developer
 ***
-
+![my photo](./assets/img/cv-img.jpg "my photo") 
 ### Contacts
 ***
 * [Address](https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%97%D0%B0%D0%BC%D0%BE%D1%81%D1%82%D1%8F%D0%BD%D1%81%D0%BA%D0%B0%D1%8F,+%D0%92%D0%B8%D0%BD%D0%BD%D0%B8%D1%86%D0%B0,+%D0%92%D0%B8%D0%BD%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+21000/@49.2409224,28.4909036,17z/data=!3m1!4b1!4m6!3m5!1s0x472d5b4186629121:0x745e0ac3cf07d224!8m2!3d49.2409189!4d28.4930923!16s%2Fg%2F1vyxh564)
