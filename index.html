@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>cv</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About myself</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#code">Code example</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#english">English</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Main -->
+    <main class="main-container">
+      <div class="container">
+        <div class="main-block">
+          <!-- Profil -->
+          <div class="main-section">
+            <section class="section">
+              <div class="user-text">
+                <h1 class="user-name">Yana Dyachok</h1>
+                <h3 class="user-work">Front End developer</h3>
+              </div>
+            </section>
+            <!--About myself  -->
+            <section class="section left-section">
+              <h2 class="section-title main-title" id="about">
+                About myself
+              </h2>
+              <p class="subtitle">
+                I'm a doctor by education. I started studying programming in
+                2021, because I really like it, it’s very interesting, I love
+                the latest technologies and constant development. I want to
+                succeed in my future profession, because it’s much better to
+                develop in the field that you like. In my free time, I work
+                out and watch movies
+              </p>
+            </section>
+            <!--Code example  -->
+            <section class="section left-section">
+              <h2 class="section-title main-title" id="code">Code examples</h2>
+              <details>
+                <summary>Write an algorithm that will identify valid IPv4 addresses in dot-decimal format. IPs should be
+                  considered valid if they consist of four octets, with values between 0 and 255, inclusive.(from
+                  codewars)</summary>
+                <pre class="snippet">
+                    <code>
+                      function isValidIP(str) {
+                        let reg = /[A-z]/;
+                        let array = str.split(".").filter((element) =&gt; {
+                          for (let index = 0; index &lt; element.length; index++) {
+                            if (element[0] === "0" &amp;&amp; element.length&gt;= 2) element = "\n";
+                          }
+                          return (
+                            element &gt;= 0 &amp;&amp;
+                            element &lt;= 255 &amp;&amp;
+                            !(element === "") &amp;&amp;
+                            !element.includes("\n") &amp;&amp;
+                            !element.includes(" ") &amp;&amp;
+                            !element.match(reg)
+                          );
+                        });
+                        return array.length !== 4 ? false : true;
+                      }
+                      const adress = "0.229.017.134";
+                      console.log(isValidIP(adress)); 
+                    </code>
+                    </pre>
+              </details>
+              <details>
+                <summary>Complete the function powerOfTwo that determines if a given non-negative integer is a power of
+                  two.You may assume the input is always valid.Beware of certain edge cases - for example, 1 is a power
+                  of 2 since 2^0 = 1 and 0 is not a power of 2.(from codewars)</summary>
+                <pre class="snippet">
+                      <code>
+                        function powerOfTwo(n){
+                          let s=0
+                          if(n===2)return true
+                          while(n!==2){
+                            n=Math.sqrt(n)
+                          }
+                          if(n===2) return true
+                          if(n&lt;2)return false
+                        }
+                        console.log(powerOfTwo(4096))
+                      </code>
+                      </pre>
+              </details>
+            </section>
+            <!-- Education -->
+            <section class="section left-section">
+              <h2 class="section-title main-title" id="education">
+                Education
+              </h2>
+              <ul>
+                <li class="item">
+                  <a class="link" href="https://www.vnmu.edu.ua/">National Pirogov Memorial Medical University
+                    (2011-2017)
+                  </a>
+                  <p>Faculty: Medical №1.</p>
+                </li>
+                <li class="item">
+                  <a class="link" href="https://vinnitsa.itstep.org/">IT-Step Academy (2021-2022)</a>
+                </li>
+                <li class="item">
+                  <a class="link" href="https://rs.school/js-stage0/">JavaScript/Front-end. Stage 0 (2022-2023)</a>in
+                  <a class="link" href="https://rs.school/">RS School</a>
+                </li>
+              </ul>
+            </section>
+            <!-- Experience -->
+            <section class="section left-section">
+              <h2 class="section-title main-title" id="experience">
+                Experience
+              </h2>
+              <p class="item">I did several projects when I was in <a class="link" href="https://rs.school/">RS
+                  School</a> (Stage 0)</p>
+              <ul>
+                <li class="item">
+                  <a class="link" href="https://yana-dyachok-cv-rs-school.netlify.app/">CV</a>
+                </li>
+                <li class="item">
+                  <a class="link" href="https://plants-3-dyachok.netlify.app/ ">Plants</a>
+                </li>
+                <li class="item">
+                  <a class="link" href="https://momentum-dyachok.netlify.app/">Momentum</a>
+                </li>
+              </ul>
+            </section>
+          </div>
+          <!-- Aside -->
+          <aside class="aside-content">
+            <!--Contacts  -->
+            <section class="section">
+              <img src="./assert/img/cv-img.jpg" alt="my photo" class="user-photo" width="270" height="300">
+              <h2 class="section-title" id="contacts">Contacts</h2>
+              <ul class="contact-list">
+                <li class="item-contact">
+                  <a
+                    href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%97%D0%B0%D0%BC%D0%BE%D1%81%D1%82%D1%8F%D0%BD%D1%81%D0%BA%D0%B0%D1%8F,+%D0%92%D0%B8%D0%BD%D0%BD%D0%B8%D1%86%D0%B0,+%D0%92%D0%B8%D0%BD%D0%BD%D0%B8%D1%86%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+21000/@49.2409224,28.4909036,17z/data=!3m1!4b1!4m6!3m5!1s0x472d5b4186629121:0x745e0ac3cf07d224!8m2!3d49.2409189!4d28.4930923!16s%2Fg%2F1vyxh564">
+                    <img src="./assert/img/house-add.svg" alt="home-icone" width="50" height="50">
+                  </a>
+                </li>
+                <li class="item-contact">
+                  <img src="./assert/img/telephone-inbound-fill.svg" alt="call-me" width="50" height="50"
+                    onclick="location.href='tel:+380992924988'">
+                </li>
+                <li class="item-contact">
+                  <a href="mailto:annetart1994@gmail.com">
+                    <img src="./assert/img/envelope-fill.svg" alt="email-icone" width="50" height="50">
+                  </a>
+                </li>
+                <li class="item-contact">
+                  <a class="link-contact" href="https://www.linkedin.com/in/yana-dyachok-06a384253/">
+                    <img src="./assert/img/linkedin.svg" alt="linkedin-icone" width="50" height="50">
+                  </a>
+                </li>
+                <li class="item-contact">
+                  <a class="link-contact" href="https://github.com/Yana-Dyachok">
+                    <img src="./assert/img/github.svg" alt="github-icone" width="50" height="50">
+                  </a>
+                </li>
+                <li class="item-contact">
+                  <a class="link-contact" href="https://www.codewars.com/users/%20Yana-Dyachok">
+                    <img src="./assert/img/codewars_logo_icon_145389.ico" alt="codewars-icone" width="50" height="50">
+                  </a>
+                </li>
+                <li class="item-contact">
+                  <a href="https://discord.com/users/yana-dyachok#6659">
+                    <img src="./assert/img/discord.svg" alt="discord-icone" width="50" height="50">
+                  </a>
+                </li>
+                <li class="item-contact">
+                  <a class="link-contact" href="https://t.me/yana_ins">
+                    <img src="./assert/img/telegram.svg" alt="telegram-icone" width="50" height="50">
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <!-- Skills -->
+            <section class="section">
+              <h2 class="section-title" id="skills">Skills</h2>
+              <ul class="aside-list">
+                <li class="item">
+                  <span class="span-item"> HTML</span>
+                </li>
+                <li class="item">
+                  <span class="span-item">CSS</span>
+                </li>
+                <li class="item">
+                  <span class="span-item">JavaScript</span>
+                </li>
+                <li class="item">
+                  <span class="span-item">C++ (OOP)</span>
+                </li>
+                <li class="item">
+                  <span class="span-item">Figma(for web development)</span>
+                </li>
+                <li class="item">
+                  <span class="span-item">Git &amp; GitHub</span>
+                </li>
+                <li class="item">
+                  <span class="span-item">Editors: VSCode, Visual Studio</span>
+                </li>
+              </ul>
+            </section>
+            <!-- English -->
+            <section class="section">
+              <h2 class="section-title" id="english">English</h2>
+              <ul class="list-english aside-list">
+                <li class="item">
+                  <span class="span-item">EPAM - test result: Pre-Intermediate( A2)</span>
+                </li>
+                <li class="item">
+                  <span class="span-item">
+                    <a href="https://p12.com.ua/" class="link span-item">Project 12</a>- test result: Intermediate( B1)
+                  </span>
+                </li>
+              </ul>
+            </section>
+          </aside>
+        </div>
+      </div>
+    </main>
+    <!-- Footer -->
+  <footer class="footer">
+      <div class="container-footer">
+        <ul class="list-footer">
+          <li class="item-footer">
+            <img src="./assert/img/github.svg" alt="github-icone" width="20" height="20">
+            <a class="link item-footer" href="https://github.com/Yana-Dyachok">
+              My GitHub
+            </a>
+          </li>
+          <li class="item-footer">© 2023</li>
+          <li>
+            <a href="https://rs.school/js/">
+              <img src="./assert/img/rs_school_js.svg" alt="rs-school" class="rs-school-img" width="100" height="50">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
