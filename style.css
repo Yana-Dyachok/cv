@@ -101,7 +101,7 @@ body {
     margin: 0 auto;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 20px;
     color: var(--black);
 }
@@ -114,6 +114,12 @@ body {
     border: 1px solid var(--green-100);
 }
 
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
 /* Main */
 .main {
     display: grid;
@@ -122,13 +128,15 @@ body {
 }
 
 .main__content {
-    padding-left: 30px;
-    gap: 20px;
+    padding: 30px 10px 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .title {
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight: 900;
     color: var(--green-100);
 }
 
@@ -155,16 +163,9 @@ body {
     color: var(--green);
 }
 
-@media (max-width: 768px) {
-    .main {
-     flex-wrap: wrap-reverse;
-     grid-template-columns: 1fr;
-    }
-}
-
 /* Aside */
 .aside__content {
-    padding-left: 20px;
+    padding: 0 10px 0 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -189,7 +190,7 @@ body {
 }
 
 .personal__subtitle {
-   font-size: 20px;
+    font-size: 20px;
 }
 
 .contacts__list {
@@ -219,6 +220,23 @@ body {
     color: var(--green-100);
 }
 
+.skills__title {
+    font-weight: 700;
+    color: var(--green-100);
+}
+
+.footer {
+    padding: 10px;
+    border-top: 1px solid var(--green-100);
+}
+
+.cv__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
 .img__container {
     min-height: 100vh;
     display: flex;
@@ -229,4 +247,23 @@ body {
 
 .img__block {
     padding: 10px;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .main {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+
+    .aside__content {
+        width: 100%;
+    }
 }
