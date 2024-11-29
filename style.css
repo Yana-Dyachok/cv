@@ -135,6 +135,7 @@ body {
 }
 
 .title {
+    padding-bottom: 5px;
     font-size: 30px;
     font-weight: 900;
     color: var(--green-100);
@@ -197,6 +198,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: center;
     gap: 20px;
     padding: 0px;
 }
@@ -249,15 +251,7 @@ body {
     padding: 10px;
 }
 
-@media (max-width: 768px) {
-    body {
-        font-size: 18px;
-    }
-
-    .title {
-        font-size: 25px;
-    }
-
+@media (max-width: 840px) {
     .main {
         display: flex;
         flex-wrap: wrap-reverse;
@@ -265,5 +259,16 @@ body {
 
     .aside__content {
         width: 100%;
+    }
+}
+
+
+@media (max-width: 540px) {
+    body {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 25px;
     }
 }
