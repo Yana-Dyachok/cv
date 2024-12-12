@@ -198,13 +198,19 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
     gap: 20px;
     padding: 0px;
 }
 
 .contacts__item:hover {
     transform: scale(1.1);
+}
+
+.contacts__link-home {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
 }
 
 .item {
