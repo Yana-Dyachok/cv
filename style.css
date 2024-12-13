@@ -206,7 +206,7 @@ body {
     transform: scale(1.1);
 }
 
-.contacts__link-home {
+.contacts__item-home {
     display: flex;
     align-items: center;
     gap: 0.5rem;
