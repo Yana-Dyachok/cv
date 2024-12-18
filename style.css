@@ -204,9 +204,10 @@ body {
 
 .contacts__item:hover {
     transform: scale(1.1);
+    cursor: pointer;
 }
 
-.contacts__item-home {
+.contacts__item-detail {
     display: flex;
     align-items: center;
     gap: 0.5rem;
