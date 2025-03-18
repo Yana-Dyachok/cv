@@ -1,1 +1,1 @@
-https://yana-dyachok.github.io/cv/
+https://diachok-yana-cv.netlify.app/
