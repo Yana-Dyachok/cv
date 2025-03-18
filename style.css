@@ -102,14 +102,14 @@ body {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 16px;
     color: var(--black);
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
-    max-width: 1600px;
+    max-width: 1480px;
     margin: 0 auto;
     border: 1px solid var(--green-100);
 }
@@ -121,12 +121,8 @@ body {
 }
 
 /* Main */
-.main {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 16px;
-}
 
+.header,
 .main__content {
     padding: 30px 10px 0 30px;
     display: flex;
@@ -136,14 +132,18 @@ body {
 
 .title {
     padding-bottom: 5px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 900;
     color: var(--green-100);
 }
 
+.personal__subtitle {
+    font-weight: 600;
+}
+
 .link {
     position: relative;
-    padding-bottom: 0.3rem;
+    padding-bottom: 3px;
     color: var(--green);
 }
 
@@ -153,7 +153,7 @@ body {
     bottom: 0;
     left: 50%;
     width: 0;
-    height: 0.1rem;
+    height: 1px;
     background-color: var(--green);
     transition: all 0.4s ease-in;
     transform: translateX(-50%);
@@ -162,15 +162,6 @@ body {
 .link:hover::before {
     width: 100%;
     color: var(--green);
-}
-
-/* Aside */
-.aside__content {
-    padding: 0 10px 0 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    background-color: var(--aside-color);
 }
 
 .personal__section {
@@ -199,19 +190,21 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 20px;
-    padding: 0px;
+    padding: 0;
 }
 
-.contacts__item:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+.contacts__item {
+    font-size: 18px;
+    display: flex;
+    align-item: base-line;
+    gap: 5px;
 }
 
 .contacts__item-detail {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
-    padding-bottom: 1rem;
+    gap: 5px;
+    padding-bottom: 10px;
 }
 
 .item {
@@ -229,7 +222,23 @@ body {
     color: var(--green-100);
 }
 
-.skills__title {
+.item__inner {
+    position: relative;
+    margin-bottom: 5px;
+    padding-left: 35px;
+    line-height: 30px;
+    letter-spacing: normal;
+}
+
+.item__inner::before {
+    content: '-';
+    position: absolute;
+    left: 1%;
+    color: var(--green-100);
+}
+
+.skills__title,
+.item__projects {
     font-weight: 700;
     color: var(--green-100);
 }
@@ -269,13 +278,12 @@ body {
     }
 }
 
-
 @media (max-width: 540px) {
     body {
         font-size: 18px;
     }
 
     .title {
-        font-size: 25px;
+        font-size: 20px;
     }
 }
