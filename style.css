@@ -1,6 +1,6 @@
 :root {
-    --green: #19843e;
-    --green-100: #134b21;
+    --green: #2a08be;
+    --green-100: #5c48b4;
     --black: #161111;
     --aside-color: #d7dcd7;
 }
@@ -103,6 +103,7 @@ body {
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
+    background-color: var(--aside-color);
     color: var(--black);
 }
 
@@ -237,6 +238,12 @@ body {
     color: var(--green-100);
 }
 
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
 .skills__title,
 .item__projects {
     font-weight: 700;
@@ -275,6 +282,10 @@ body {
 
     .aside__content {
         width: 100%;
+    }
+
+    .items {
+        gap: 10px;
     }
 }
 
